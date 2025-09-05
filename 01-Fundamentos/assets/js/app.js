@@ -41,4 +41,7 @@ console.log('c', c);
 // console.table({a, b, c, d, x});
 
 // Esto no es buena práctica.
-var miNombre = 'Angel';
+var outerWidth = 1000000;
+var outerHeight = 500;
+
+let miNuevoNombre = 'Angel Díaz'
