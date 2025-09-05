@@ -61,7 +61,6 @@ personaje.direccion.ubicacion = 'Costa Rica';
 
 console.log(personaje);
 
-
 // Obtener las propiedades y valores de un objecto.
 const propiedades = Object.getOwnPropertyNames(personaje);
 const valores = Object.values(personaje);
