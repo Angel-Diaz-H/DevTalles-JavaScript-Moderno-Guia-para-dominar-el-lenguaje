@@ -2,6 +2,10 @@
 function saludar (nombre) {
     console.log(arguments); // En la versión más reciente ya no lo incluye
     console.log('Hola,', nombre);
+    return 10;
+
+    /* Nunca se ejecutará aquello después del return. */
+    //console.log('Soy un código que está después del return.');
 };
 
 // Función anónima.
@@ -20,7 +24,27 @@ const saludarFlecha2 = (nombre) =>{
     console.log('Hola,', nombre);
 };
 
-saludar('Angel', 40, true, 'Costa Rica');
-saludar2('Angel');
-saludarFlecha();
-saludarFlecha2('Ubuntu');
+// const retornoDeSaludar = saludar('Angel', 40, true, 'Costa Rica');
+
+// saludar2('Angel');
+// saludarFlecha();
+// saludarFlecha2('Ubuntu');
+
+
+function sumar(a, b) {
+    return a+ b;
+}
+
+// const sumar2 = (a, b) => {
+//     return a + b;
+// };
+
+const sumar2 = (a,b) => a + b;
+
+function getAleatorio() {
+    return Math.random();
+}
+
+const getAleatorio2 = () => Math.random();
+
+console.log(getAleatorio2());
