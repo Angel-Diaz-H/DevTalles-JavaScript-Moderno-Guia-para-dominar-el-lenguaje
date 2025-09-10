@@ -30,3 +30,18 @@ const crearDeck = () => {
 };
 
 crearDeck();
+
+
+// Pedir una carta.
+const pedirCarta = () => {
+    if (deck.length === 0) {
+        throw 'No hay cartas en el deck';
+    }
+    
+    // La carta debe ser de la baraja.
+    const carta = deck.pop();
+    console.log(carta);
+    return carta;
+};
+
+pedirCarta();
