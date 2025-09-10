@@ -17,6 +17,7 @@ console.log(dia);
 // == es una comparación.
 // === es una comparación estricta.
 
+// Aquí se genera una identación muy larga.
 /* if (dia === '0') {
     console.log('Domingo');
 } else {
@@ -43,4 +44,22 @@ if (dia === 0) {
     console.log('Sábado');
 } else {
     console.log('No es un día de la semana');
-}
+};
+
+// Sin usar If Else, o Switch, únicamente objectos.
+dia = 3;
+// Día de la semana.
+const diaLetras = {
+    0: 'Domingo',
+    1: 'Lunes',
+    2: 'Martes',
+    3: 'Miércoles',
+    4: 'Jueves',
+    5: 'Viernes',
+    6: 'Sábado'
+};
+
+const diaLetras2 = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+
+console.log(diaLetras[dia] || 'No es un día de la semana');
+console.log(diaLetras2[dia] || 'No es un día de la semana');
