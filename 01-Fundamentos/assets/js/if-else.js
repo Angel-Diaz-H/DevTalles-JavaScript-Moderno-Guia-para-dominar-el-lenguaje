@@ -1,0 +1,46 @@
+let a = 5;
+
+if (a >= 10) { // Undefined, null, una asignación.
+    console.log('Es mayor o igual a 10');
+} else {
+    console.log('Es menor a 10');
+}
+
+// console.log('Fin del programa.');
+
+// new sirve para crear una instancia de un objecto
+const hoy = new Date();
+// 0: Domingo, 1: Lunes, ...
+let dia = hoy.getDay();
+console.log(dia);
+// = es una asignación.
+// == es una comparación.
+// === es una comparación estricta.
+
+/* if (dia === '0') {
+    console.log('Domingo');
+} else {
+    if (dia === '1') {
+        console.log('Lunes');
+    } else {
+        console.log('No es domingo ni lunes');
+    }
+}; */
+
+if (dia === 0) {
+    console.log('Domingo');
+} else if (dia === 1) {
+    console.log('Lunes');
+} else if (dia === 2) {
+    console.log('Martes');
+} else if (dia === 3) {
+    console.log('Miércoles');
+} else if (dia === 4) {
+    console.log('Jueves');
+} else if (dia === 5) {
+    console.log('Viernes');
+} else if (dia === 6) {
+    console.log('Sábado');
+} else {
+    console.log('No es un día de la semana');
+}
