@@ -1,7 +1,5 @@
 // UpperCamelCase para clases.
 class Persona {
-    // Por defecto se usa Use strict.
-
     nombre = '';
     codigo = '';
     frase = '';
@@ -12,9 +10,21 @@ class Persona {
         this.codigo = codigo;
         this.frase = frase;
     };
+
+    quienSoy(){
+        console.log(`Soy ${this.nombre} - ${this.codigo} - ${this.frase}`);
+    }
+
+    miFrase() {
+        this.quienSoy();
+        console.log(`La frase de ${this.nombre} es: ${this.frase}`);
+    }
 };
 
 const spiderman = new Persona('Peter Parker', 'Spiderman', 'I am SpiderMan');
-const ironman = new Persona('Tony Stark', 'Ironman', 'I am IronMan');
+const ironman = new Persona('Tony Stark', 'Ironman', 'I am Ironman');
 console.log(spiderman);
 console.log(ironman);
+
+spiderman.miFrase();
+ironman.miFrase();
