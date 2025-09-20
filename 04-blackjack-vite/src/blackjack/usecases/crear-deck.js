@@ -1,7 +1,21 @@
 import _ from "underscore";
 
 // Esta función crea un nuevo deck
+/**
+ * Esta función crea un nuevo deck.
+ * @param {array<string>} tiposCarta Ejemplo: ['C','D','H','S'].
+ * @param {Array} tiposEspeciales Ejemplo: ['A','J','Q','K'].
+ * @returns {Array} Retorna un nuevo deck de cartas.
+ */
+
 export const crearDeck = (tiposCarta, tiposEspeciales) => {
+
+    // Estas validaciones son innecesarias en Typescript, pero hay código que así lo utiliza.
+    if(!tiposCarta || tiposCarta.length === 0)
+        throw new Error('tiposCarta es obligatorio como un arreglo de string');
+
+    if(!tiposEspeciales || tiposEspeciales.length === 0)
+        throw new Error('tiposEspeciales es obligatorio como un arreglo de string');
 
     let deck = [];
     for( let i = 2; i <= 10; i++ ) {
