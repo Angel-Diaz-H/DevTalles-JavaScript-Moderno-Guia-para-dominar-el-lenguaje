@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^7.1.6"
+    "vite": "7.1.6"
+  },
+  "dependencies": {
+    "uuid": "13.0.0"
   }
 }
