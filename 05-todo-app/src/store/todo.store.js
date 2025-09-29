@@ -8,11 +8,6 @@ const Filters = {
 
 const state = {
     todos: [
-        new Todo('Piedra del alma'),
-        new Todo('Piedra del tiempo'),
-        new Todo('Piedra del espacio'),
-        new Todo('Piedra del poder'),
-        new Todo('Piedra del realidad')
     ],
     filter: Filters.All
 }
@@ -77,7 +72,7 @@ const deleteTodo = (todoId) => {
 }
 
 const deleteCompleted = () => {
-    state.todos = state.todos.filter(todo => todo.done);
+    state.todos = state.todos.filter(todo => !todo.done);
     saveStateToLocalStorage();
 }
 
