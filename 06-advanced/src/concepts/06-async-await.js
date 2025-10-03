@@ -16,7 +16,6 @@ export const asyncAwaitComponent = async(element) => {
     } catch(error) {
         element.innerHTML = error;
     }
-
 };
 
 const findHero = async(id) => {
