@@ -32,6 +32,17 @@ export const BreakingBadApp = async(element) => {
         element.replaceChildren(quoteLabel, authoLablel, nextQuoteButton);
     };
 
+    // // TODO añadir listener.
+    // nextQuoteButton.addEventListener('click', async() => {
+    //     element.innerHTML = 'Loading...';
+    //     const quote = await fetchQuote();
+    //     renderQuote(quote);
+    // })
+
+    nextQuoteButton.onclick = () => {
+        BreakingBadApp(element);
+    };
+
     fetchQuote()
         .then(renderQuote);
 };
