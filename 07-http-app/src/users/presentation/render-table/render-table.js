@@ -39,7 +39,7 @@ export const renderTable = (element) => {
     users.forEach(user => {
         tableHTML += `
             <tr>
-                <td${user.id}td>
+                <td>${user.id}</td>
                 <td>${user.balance}</td>
                 <td>${user.firstName}</td>
                 <td>${user.lastName}</td>

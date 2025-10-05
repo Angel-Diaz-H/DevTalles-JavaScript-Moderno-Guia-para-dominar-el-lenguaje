@@ -449,6 +449,13 @@
       "first_name": "Mcbride",
       "last_name": "Woodward",
       "gender": "male"
+    },
+    {
+      "id": "e9e8",
+      "balance": 478238,
+      "first_name": "Angel",
+      "isActive": true,
+      "last_name": "Díaz"
     }
   ]
 }
