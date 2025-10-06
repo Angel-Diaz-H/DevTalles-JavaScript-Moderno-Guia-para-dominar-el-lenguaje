@@ -29,6 +29,7 @@ const setFormValues = (user) => {
     form.querySelector('[name="balance"]').value = user.balance;
     form.querySelector('[name="isActive"]').checked = user.isActive;
     loadedUser = user;
+    console.log({loadedUser});
 };
 
 export const hideModal = () => {
